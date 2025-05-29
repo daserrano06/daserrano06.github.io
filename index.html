@@ -4,112 +4,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Daniel Serrano | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #181a1b;
+      --card: #242627;
+      --accent: #1abc9c;
+      --text: #ddd;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7fa;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
     }
-
     .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: #ffffff;
+      max-width: 800px;
+      margin: 60px auto;
+      background: var(--card);
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
     }
-
     h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      color: var(--accent);
       text-align: center;
-      color: #0a66c2;
-      margin-bottom: 0.5em;
+      margin-bottom: 25px;
     }
-
     h2 {
-      border-bottom: 2px solid #0a66c2;
-      padding-bottom: 5px;
-      margin-top: 2em;
-      color: #0a66c2;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.7rem;
+      color: var(--accent);
+      margin-top: 35px;
+      margin-bottom: 15px;
+      position: relative;
     }
-
-    a {
-      color: #0a66c2;
-      text-decoration: none;
+    h2::after {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      display: block;
+      margin-top: 5px;
     }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
+    p { margin-bottom: 1rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #0a66c2;
-      color: #fff;
+      background: var(--accent);
+      color: #181a1b;
+      padding: 12px 24px;
+      border: none;
       border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       text-decoration: none;
-      font-weight: bold;
+      display: inline-block;
       margin-top: 10px;
     }
-
-    .button:hover {
-      background-color: #004b99;
+    .button:hover { background: #138f75; }
+    img.profile {
+      display: block;
+      margin: 0 auto 20px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
     }
-
-    ul {
-      padding-left: 1.2em;
-    }
-
     .footer {
       text-align: center;
+      color: #555;
       margin-top: 60px;
-      color: #888;
       font-size: 14px;
     }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
+    @media (max-width: 600px) {
+      .container { padding: 20px; }
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 1.4rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div style="text-align: center;">
-    <img src="profilepic.png" alt="profile picture" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); margin-bottom: 12px;">
-    <h1>Daniel Serrano</h1>
-    </div>
-
+    <img src="profilepic.png" alt="Profile picture of Daniel Serrano" class="profile">
+    <h1>Daniel Serrano</h1>
 
     <section>
       <h2>About Me</h2>
       <p>Hello and welcome to my page!</p>
-      <p>I'm a senior pursuing a Bachelor of Science in Computer Science at the University of New Mexico, with graduation expected in Fall 2025. I have a strong interest in software engineering, systems development, and cybersecurity, and I’m currently seeking an internship or entry-level opportunity where I can contribute to impactful projects while continuing to grow professionally.</p>
-      <p>I’m passionate about building secure, efficient, and user-friendly applications. Whether it's optimizing backend logic, designing intuitive user experiences, or collaborating with cross-functional teams, I enjoy solving real-world problems through technology. I take pride in writing clean, maintainable code and continuously learning new tools and techniques to enhance my skills.</p>
-      <p>Beyond technical abilities, I bring a strong work ethic, adaptability, and a commitment to communication and collaboration. I’m a proud graduate of the Albuquerque Institute for Mathematics and Science, where I learned early on the value of teamwork, independence, and persistence. I also hold deep cultural and familial values rooted in my Hispanic heritage, and I’m proud to be the son of a United States Air Force veteran. These experiences have shaped who I am and drive me to make meaningful contributions wherever I go.</p>
-      <p>If you're looking for someone who’s eager to learn, ready to contribute, and committed to making a positive impact — I’d love to connect!</p>
+      <p>I'm a senior pursuing a Bachelor of Science in Computer Science at the University of New Mexico, graduating Fall 2025. Passionate about software engineering, systems development, and cybersecurity, I seek internship or entry-level roles where I can make an impact and grow my expertise.</p>
+      <p>I specialize in crafting secure, efficient applications and intuitive experiences. By combining data‑driven problem solving with clean, maintainable code, I transform ideas into reliable solutions. Collaboration and continuous learning drive me to excel on diverse teams.</p>
+      <p>My roots at the Albuquerque Institute for Mathematics and Science, and my Hispanic heritage and upbringing as the son of a U.S. Air Force veteran, have instilled resilience, integrity, and a strong sense of community. I’m eager to bring that same dedication to your organization.</p>
+      <p>If you're looking for a motivated, versatile team member who thrives on challenges — let’s connect!</p>
     </section>
 
     <section>
       <h2>Resume</h2>
-      <a href="Daniel_Serrano_Resume.pdf" class="button" target="_blank">View My Resume (PDF)</a>
+      <a href="Daniel_Serrano_Resume.pdf" class="button" target="_blank">View My Resume</a>
     </section>
 
     <section>
       <h2>Projects</h2>
-      <p>Project showcase coming soon! I’ll be adding examples of my work here including software applications, databases, and simulations I've built as part of my academic and personal projects.</p>
+      <p>More coming soon: code repositories, interactive demos, and breakdowns of my key projects in software and cybersecurity.</p>
     </section>
 
     <section>
@@ -119,9 +119,7 @@
       <p>LinkedIn: <a href="https://linkedin.com/in/YOURNAME" target="_blank">linkedin.com/in/YOURNAME</a></p>
     </section>
 
-    <div class="footer">
-      &copy; 2025 Daniel Serrano
-    </div>
+    <div class="footer">&copy; 2025 Daniel Serrano</div>
   </div>
 </body>
 </html>
