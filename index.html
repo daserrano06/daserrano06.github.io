@@ -2,49 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Daniel Serrano - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Serrano | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
       color: #333;
     }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0a66c2;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #0a66c2;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #0a66c2;
+    }
     a {
-      color: #0077cc;
+      color: #0a66c2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0a66c2;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #004b99;
+    }
+    .contact-links p {
+      margin: 8px 0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Daniel Serrano</h1>
-    <p>Computer Science senior at the University of New Mexico, graduating December 2025.</p>
 
-    <h2>Resume</h2>
-    <p><a href="Daniel_Serrano_Resume.pdf" target="_blank">View my resume (PDF)</a></p>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a senior Computer Science student at the University of New Mexico, graduating December 2025. I'm passionate about software development, cybersecurity, and building user-friendly technology solutions. I'm currently seeking internships or entry-level opportunities — both in and outside of tech — to gain real-world experience and grow my skills.</p>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Disease Spread Simulation</strong> — Modeled virus spread using real data.</li>
-      <li><strong>Retail Warehouse Database</strong> — Designed SQL database system for inventory tracking.</li>
-      <li><strong>2D Game</strong> — Built object-oriented game in Haskell and Java.</li>
-    </ul>
+    <section>
+      <h2>Resume</h2>
+      <a href="Daniel_Serrano_Resume.pdf" class="button" target="_blank">View My Resume (PDF)</a>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:daserrano06@gmail.com">daserrano06@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/daserrano06" target="_blank">github.com/daserrano06</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/YOURNAME" target="_blank">linkedin.com/in/YOURNAME</a></p>
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <p>Email: <a href="mailto:daserrano06@gmail.com">daserrano06@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/daserrano06" target="_blank">github.com/daserrano06</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/YOURNAME" target="_blank">linkedin.com/in/YOURNAME</a></p>
+      </div>
+    </section>
+
+    <div class="footer">
+      &copy; 2025 Daniel Serrano
+    </div>
   </div>
 </body>
 </html>
